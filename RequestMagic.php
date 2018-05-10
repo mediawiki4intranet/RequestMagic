@@ -57,7 +57,7 @@ class RequestMagicImpl
         return true;
     }
 
-    static function ParserFirstCallInit(&$parser)
+    static function ParserFirstCallInit($parser)
     {
         $parser->setFunctionHook('request', 'RequestMagicImpl::pf_request');
         $parser->setFunctionHook('requestparams', 'RequestMagicImpl::pf_requestparams');
